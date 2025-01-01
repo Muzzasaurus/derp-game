@@ -60,7 +60,7 @@ global.debug_key = vk_control;
     global.camera_width_default = global.game_width;
     global.camera_height_default = global.game_height;
     // The lerp value used to smooth the camera movement. 1 means no smoothing.
-    global.camera_lerp_default = 0.25;
+    global.camera_lerp_default = 1;
     // Whether the camera is allowed to move outside the room.
     global.camera_leave_room_default = false;
     // Whether the camera is locked to a screen grid instead of following the player.

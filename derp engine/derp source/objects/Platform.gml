@@ -6,6 +6,7 @@ applies_to=self
 */
 snap = true;
 bounce = true;
+onetime = false;
 
 platform_floor_prev = undefined;
 #define Step_0
@@ -47,3 +48,4 @@ applies_to=self
 */
 //field snap: bool
 //field bounce: bool
+//field onetime: bool

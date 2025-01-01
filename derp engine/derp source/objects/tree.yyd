@@ -96,3 +96,9 @@
 		|objSampleBossWarp
 		|objSampleBossItem
 	|SampleStretchingBlock
++Custom
+	+Tools
+		|objSkinner
+	+Gimmicks
+		|objShootRefreshL
+		|objShootRefreshR

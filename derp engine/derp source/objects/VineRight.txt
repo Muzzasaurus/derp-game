@@ -2,6 +2,6 @@ sprite=sprVineRight
 visible=1
 solid=0
 persistent=0
-depth=20
+depth=-9
 parent=
 mask=

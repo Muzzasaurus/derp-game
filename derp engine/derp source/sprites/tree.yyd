@@ -107,3 +107,10 @@
 +Misc
 	|sprEmpty
 	|spr1x1
++Custom
+	+Tools
+		|sprController
+		|sprThrow
+	+Gimmicks
+		|sprShootRefreshL
+		|sprShootRefreshR

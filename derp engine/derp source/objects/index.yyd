@@ -87,3 +87,6 @@ TriggerRotate
 TriggerString
 TriggerTrigger
 
+objSkinner
+objShootRefreshL
+objShootRefreshR
