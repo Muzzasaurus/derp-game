@@ -114,3 +114,15 @@ sprController
 sprThrow
 sprShootRefreshL
 sprShootRefreshR
+sprite116
+sprHighSpeedField
+sprLowSpeedField
+sprite119
+sprHighGravField
+sprLowGravField
+sprStarTripleJump
+sprStarDoubleJump
+sprStarSingleJump
+sprPlayerLadderLR
+sprPlayerLadderUD
+sprPlayerBack

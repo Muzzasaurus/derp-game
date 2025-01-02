@@ -113,3 +113,6 @@
 	|ternary
 	|get_formatted_time
 	|ease_value
++Custom
+	|macro_down_flip
+	|macro_up_flip

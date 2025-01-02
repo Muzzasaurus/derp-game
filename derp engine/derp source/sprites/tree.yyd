@@ -31,6 +31,9 @@
 	|sprBullet
 	|sprBlood
 	|sprGameOver
+	|sprPlayerLadderLR
+	|sprPlayerLadderUD
+	|sprPlayerBack
 +Menu
 	|sprFileBackground
 +Blocks
@@ -114,3 +117,12 @@
 	+Gimmicks
 		|sprShootRefreshL
 		|sprShootRefreshR
+|sprite116
+|sprite119
+|sprHighSpeedField
+|sprLowSpeedField
+|sprHighGravField
+|sprLowGravField
+|sprStarTripleJump
+|sprStarDoubleJump
+|sprStarSingleJump

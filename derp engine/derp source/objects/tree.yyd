@@ -102,3 +102,12 @@
 	+Gimmicks
 		|objShootRefreshL
 		|objShootRefreshR
+		|Ladder
+		|LadderSide
+		|StarSingleJump
+		|StarDoubleJump
+		|StarTripleJump
+		|LowGravField
+		|HighGravField
+		|LowSpeedField
+		|HighSpeedField

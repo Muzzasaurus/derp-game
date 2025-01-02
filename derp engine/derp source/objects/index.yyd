@@ -90,3 +90,12 @@ TriggerTrigger
 objSkinner
 objShootRefreshL
 objShootRefreshR
+Ladder
+LadderSide
+StarSingleJump
+StarDoubleJump
+StarTripleJump
+LowGravField
+HighGravField
+LowSpeedField
+HighSpeedField

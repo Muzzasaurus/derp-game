@@ -9,9 +9,11 @@ ground_jump_speed = 8.5;
 air_jump_speed = 7;
 jump_release_multiplier = 0.45;
 grav = 0.4;
-max_air_jumps = 1;
+max_air_jumps = save_get("StarJumps");
 max_vspeed = 9;
 run_speed = 3;
+ladder=false
+ladderjump=false
 
 // State
 frozen = false;
@@ -31,6 +33,43 @@ if global.save_autosave {
 
 player_set_mask();
 #define Step_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+///the ladder preceeds all
+// I dont make the rules
+
+v_input = input_check(key_down) - input_check(key_up);
+if (v_input!=0 && !ladder) if (instance_place(x,y,Ladder)) {
+    ladder=true
+    air_jumps=max_air_jumps
+}
+
+if (ladder) {
+    if (!instance_place(x,y,Ladder) || (on_floor && macro_down_flip())) {
+        //fall off
+        ladder=false
+    } else {
+        //ride ladder
+        if (v_input!=0) {if (place_free(x,y+run_speed*v_input)) {
+            vspeed=run_speed*v_input
+            gravity=0
+        }} else { vspeed=0 gravity=0}
+
+        //jump out of ladder
+        if (input_check_pressed(key_jump)) {
+            ladderjump=true
+            ladder=false
+        }
+    }
+}
+
+if (!ladder) {
+    //normal gravity when not in a ladder
+    gravity=grav*global.grav
+}
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
@@ -99,7 +138,7 @@ if on_floor {
     }
 }
 
-gravity = global.grav * grav;
+if(!ladder) gravity = global.grav * grav;
 feet_y_prev = ternary(global.grav == 1, bbox_bottom, bbox_top);
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -254,6 +293,26 @@ if !place_free(x + hspeed, y + vspeed) {
 }
 
 vspeed -= gravity;
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+///nang fields
+run_speed = 3
+grav = 0.4
+
+if (instance_place(x,y,LowSpeedField)) {
+    run_speed = 1
+} else if (instance_place(x,y,HighSpeedField)) {
+    run_speed = 6
+}
+
+if (instance_place(x,y,HighGravField)) {
+    grav = 0.7
+} else if (instance_place(x,y,LowGravField)) {
+    grav = 0.2
+}
 #define Step_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -363,8 +422,19 @@ action_id=603
 applies_to=self
 */
 /// Player animation
-
-if on_floor {
+if ladder {
+    if (hspeed!=0) {
+        sprite_index=sprPlayerLadderLR
+        image_speed=0.2
+    } else if (vspeed!=0) {
+        sprite_index=sprPlayerLadderUD
+        image_speed=0.2
+    } else {
+        sprite_index=sprPlayerBack
+        image_speed=0.1
+    }
+}
+else if on_floor {
     if h_input != 0 {
         sprite_index = sprPlayerRun;
         image_speed = 0.5;
