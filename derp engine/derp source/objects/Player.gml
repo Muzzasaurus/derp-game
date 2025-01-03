@@ -4,6 +4,11 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+//Zero grav variables
+entered=false
+ho=0
+vo=0
+
 // Behavior constants
 ground_jump_speed = 8.5;
 air_jump_speed = 7;
@@ -86,11 +91,13 @@ if vine_direction == 0 {
 }
 
 // Horizontal movement
-h_input = 0;
-if !frozen {
-    h_input = input_check(key_right);
-    if h_input == 0 {
-        h_input = -input_check(key_left);
+if !place_meeting(x,y,ZeroGravField) {
+    h_input = 0;
+    if !frozen {
+        h_input = input_check(key_right);
+        if h_input == 0 {
+            h_input = -input_check(key_left);
+        }
     }
 }
 
@@ -193,6 +200,10 @@ if vine_direction != 0 {
         }
 
         vine_direction = 0;
+        if place_meeting(x,y,ZeroGravField) {
+            ho=hspeed
+            h_input *= -1
+        }
     }
 }
 /*"/*'/**//* YYD ACTION
@@ -312,6 +323,45 @@ if (instance_place(x,y,HighGravField)) {
     grav = 0.7
 } else if (instance_place(x,y,LowGravField)) {
     grav = 0.2
+}
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+///Zero grav step event
+if (instance_place(x,y,ZeroGravField) and entered) {
+    hspeed = ho
+    grav = 0
+    gravity = 0
+    if(on_floor and vspeed != -global.grav * ground_jump_speed and vspeed != 0) {
+        vspeed = 0
+    }
+    if (place_meeting(x+hspeed,y+vspeed,Block) and !place_meeting(x+hspeed,y,Block) and vspeed < 0) {
+        vspeed=0
+    }
+    // Potential fix, may cause other bugs
+    if (place_meeting(x,y+global.grav,Block)) and (!on_floor) {
+        on_floor=true
+        vspeed=0
+    }
+    if (place_meeting(x+hspeed,y,Block)) {
+        ho=0
+        hspeed=0
+    }
+    //vspeed = vo
+}
+#define Step_1
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+///Zero grav begin step
+if (instance_place(x,y,ZeroGravField) and !entered) {
+    entered = true
+    ho = hspeed
+    vo = vspeed
 }
 #define Step_2
 /*"/*'/**//* YYD ACTION
@@ -457,6 +507,17 @@ else {
         sprite_index = sprPlayerFall;
         image_speed = 0.5;
     }
+}
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+///Zero grav end step
+if (!instance_place(x,y,ZeroGravField) and entered) {
+    entered = false
+    grav = 0.4
+    hspeed=ho
 }
 #define Other_4
 /*"/*'/**//* YYD ACTION
