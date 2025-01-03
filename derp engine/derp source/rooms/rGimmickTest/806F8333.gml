@@ -1,0 +1,11 @@
+//gm82 fields begin
+spike_down=sprChuratchSpikeD
+spike_right=sprChuratchSpikeR
+spike_left=sprChuratchSpikeL
+spike_up=sprChuratchSpikeU
+mini_spike_down=sprChuratchMSpikeD
+mini_spike_right=sprChuratchMSpikeR
+mini_spike_left=sprChuratchMSpikeL
+mini_spike_up=sprChuratchMSpikeU
+fruit=sprCherryAzure
+//gm82 fields end

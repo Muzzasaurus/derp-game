@@ -117,6 +117,18 @@
 	+Gimmicks
 		|sprShootRefreshL
 		|sprShootRefreshR
+	+Killers
+		+Spike
+			|sprChuratchSpikeU
+			|sprChuratchSpikeR
+			|sprChuratchSpikeD
+			|sprChuratchSpikeL
+		+Mini Spike
+			|sprChuratchMSpikeU
+			|sprChuratchMSpikeR
+			|sprChuratchMSpikeD
+			|sprChuratchMSpikeL
+		+Cherry
 |sprite116
 |sprite119
 |sprHighSpeedField

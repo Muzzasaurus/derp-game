@@ -4,9 +4,10 @@
 	|rMenu
 	|rOptions
 +Game
-	|rSample
-	|rSampleTriggers
-	|rSampleBoss
-	|rSampleClear
-	|rTemplate
-|rGimmickTest
+	|rGimmickTest
+	+SAMPLE ROOMS BAD
+		|rSample
+		|rSampleTriggers
+		|rSampleClear
+		|rSampleBoss
+		|rTemplate
