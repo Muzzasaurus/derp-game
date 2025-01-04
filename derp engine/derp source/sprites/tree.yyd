@@ -119,11 +119,19 @@
 		|sprShootRefreshR
 	+Killers
 		+Spike
+			|sprCharmSpikeU
+			|sprCharmSpikeR
+			|sprCharmSpikeD
+			|sprCharmSpikeL
 			|sprChuratchSpikeU
 			|sprChuratchSpikeR
 			|sprChuratchSpikeD
 			|sprChuratchSpikeL
 		+Mini Spike
+			|sprCharmMSpikeU
+			|sprCharmMSpikeR
+			|sprCharmMSpikeD
+			|sprCharmMSpikeL
 			|sprChuratchMSpikeU
 			|sprChuratchMSpikeR
 			|sprChuratchMSpikeD

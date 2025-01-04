@@ -5,6 +5,8 @@
 	|rOptions
 +Game
 	|rGimmickTest
+	+Floor
+		|rmCharmstinat1
 	+SAMPLE ROOMS BAD
 		|rSample
 		|rSampleTriggers

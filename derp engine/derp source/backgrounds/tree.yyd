@@ -1,7 +1,9 @@
 +Backgrounds
 	|bMegaman
+	|bgCharmOld
 	|bgChuratch
 +Tiles
 	|bDefaultTiles
 	|bTree
+	|tileCharm
 	|tileChuratch

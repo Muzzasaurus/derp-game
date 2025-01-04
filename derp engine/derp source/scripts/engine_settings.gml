@@ -37,7 +37,7 @@ global.debug_key = vk_control;
     // Makes the player die once they entirely leave the room.
     global.killer_room_border = true;
     // Makes platforms push the player into a ceiling instead of making them fall through.
-    global.strong_platforms = true;
+    global.strong_platforms = false;
     // Makes moving platforms/blocks crush the player.
     global.solids_crush = true;
     // Stops whatever keys the player was holding on certain transitions.
