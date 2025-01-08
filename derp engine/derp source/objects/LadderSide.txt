@@ -1,4 +1,4 @@
-sprite=sprite119
+sprite=sprLadderSide
 visible=1
 solid=0
 persistent=0

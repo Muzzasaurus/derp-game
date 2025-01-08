@@ -1,0 +1,18 @@
+ERROR in
+action number 1
+of Other Event: User Defined 4
+for object instance:
+
+Error in code at line 19:   
+                with (ds_map_get(uidmap,string_replace(fields[i,1],roomname+"_",""))) {                         ^at position 24: Object id expected
+
+
+ERROR in
+action number 1
+of Other Event: User Defined 4
+for object instance:
+
+Error in code at line 19:   
+                with (ds_map_get(uidmap,string_replace(fields[i,1],roomname+"_",""))) {                         ^at position 24: Object id expected
+
+

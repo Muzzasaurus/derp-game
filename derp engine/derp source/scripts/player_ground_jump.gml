@@ -10,6 +10,9 @@ if instance_exists(Player) {
         if(instance_place(x,y,Player) and onetime) {
             sound_play("sndPlatformBreak")
             instance_destroy()
+            if(mirror != noone) {
+                with(mirror) instance_destroy()
+            }
         }
     }
 }

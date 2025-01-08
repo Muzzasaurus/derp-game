@@ -114,10 +114,10 @@ sprController
 sprThrow
 sprShootRefreshL
 sprShootRefreshR
-sprite116
+sprLadder
 sprHighSpeedField
 sprLowSpeedField
-sprite119
+sprLadderSide
 sprHighGravField
 sprLowGravField
 sprStarTripleJump
@@ -143,3 +143,11 @@ sprCharmMSpikeU
 sprCharmMSpikeR
 sprCharmMSpikeD
 sprCharmMSpikeL
+sprMirrorTempleBG
+sprPlainSpikeUp
+sprPlainSpikeRight
+sprPlainSpikeDown
+sprPlainSpikeLeft
+
+sprMirrorCherry1
+sprMirrorCherry2

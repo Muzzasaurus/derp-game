@@ -74,7 +74,7 @@ if (mini_spike_up!=noone) {
 
 // fruit
 if (fruit!=noone) {
-    with (Cherry) {sprite_index=other.fruit image_blend=other.blend image_alpha=other.alpha}
+    with (Cherry) {if(sprite_index != sprMirrorCherry1) sprite_index=other.fruit image_blend=other.blend image_alpha=other.alpha}
     //with (FruitTrap) {sprite_index=other.fruit image_blend=other.blend image_alpha=other.alpha}
 }
 

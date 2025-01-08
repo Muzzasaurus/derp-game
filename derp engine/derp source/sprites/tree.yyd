@@ -117,6 +117,16 @@
 	+Gimmicks
 		|sprShootRefreshL
 		|sprShootRefreshR
+		|sprLadder
+		|sprLadderSide
+		|sprLowSpeedField
+		|sprHighSpeedField
+		|sprHighGravField
+		|sprLowGravField
+		|sprStarTripleJump
+		|sprStarDoubleJump
+		|sprStarSingleJump
+		|sprZeroGravField
 	+Killers
 		+Spike
 			|sprCharmSpikeU
@@ -127,6 +137,10 @@
 			|sprChuratchSpikeR
 			|sprChuratchSpikeD
 			|sprChuratchSpikeL
+			|sprPlainSpikeUp
+			|sprPlainSpikeRight
+			|sprPlainSpikeDown
+			|sprPlainSpikeLeft
 		+Mini Spike
 			|sprCharmMSpikeU
 			|sprCharmMSpikeR
@@ -137,13 +151,7 @@
 			|sprChuratchMSpikeD
 			|sprChuratchMSpikeL
 		+Cherry
-|sprite116
-|sprite119
-|sprHighSpeedField
-|sprLowSpeedField
-|sprHighGravField
-|sprLowGravField
-|sprStarTripleJump
-|sprStarDoubleJump
-|sprStarSingleJump
-|sprZeroGravField
+			|sprMirrorCherry1
+			|sprMirrorCherry2
+	+Visuals
+		|sprMirrorTempleBG

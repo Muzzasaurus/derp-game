@@ -1,0 +1,7 @@
+sprite=sprMirrorTempleBG
+visible=1
+solid=0
+persistent=0
+depth=5000
+parent=
+mask=

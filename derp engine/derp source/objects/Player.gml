@@ -571,3 +571,13 @@ draw_sprite_ext(_draw_sprite, image_index, _draw_x, _draw_y, x_scale, _draw_y_sc
 if has_bow {
     draw_sprite_ext(sprPlayerBow, image_index, _draw_x, _draw_y, x_scale, image_yscale * global.grav, image_angle, image_blend, image_alpha);
 }
+
+if(instance_exists(objMirrorController)){
+    // Draw the player
+    draw_sprite_ext(_draw_sprite, image_index, _draw_x, ((_draw_y-304)*-1)+304, x_scale, _draw_y_scale*-1, image_angle, _draw_color, _draw_alpha);
+
+    // Draw the bow
+    if has_bow {
+        draw_sprite_ext(sprPlayerBow, image_index, _draw_x, ((_draw_y-304)*-1)+304, x_scale, image_yscale * -global.grav, image_angle, image_blend, image_alpha);
+    }
+}
