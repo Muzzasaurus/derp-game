@@ -2,8 +2,11 @@
 	|bMegaman
 	|bgCharmOld
 	|bgChuratch
+	|bgRoseGear
 +Tiles
 	|bDefaultTiles
 	|bTree
 	|tileCharm
 	|tileChuratch
+	|tileLegato
+	|tileRoseGear
