@@ -127,6 +127,8 @@
 		|sprStarDoubleJump
 		|sprStarSingleJump
 		|sprZeroGravField
+		|sprOrangeCatharsis
+		|sprMtnDew
 	+Killers
 		+Spike
 			|sprCharmSpikeU
@@ -150,6 +152,10 @@
 			|sprChuratchMSpikeR
 			|sprChuratchMSpikeD
 			|sprChuratchMSpikeL
+			|sprPlainSpikeU
+			|sprPlainSpikeR
+			|sprPlainSpikeD
+			|sprPlainSpikeL
 		+Cherry
 			|sprMirrorCherry1
 			|sprMirrorCherry2

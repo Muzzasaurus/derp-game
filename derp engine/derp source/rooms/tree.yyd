@@ -6,7 +6,8 @@
 +Game
 	|rGimmickTest
 	+Floor
-		|rmCharmstinat1
+		|rmCharmstinat1and2
+		|rmCharmstinat3
 		|rmLegato1
 		|rmRoseGear1
 		+25-27 (mirror temple)
