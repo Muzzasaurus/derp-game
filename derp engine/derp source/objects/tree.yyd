@@ -117,4 +117,10 @@
 		|ZeroGravField
 	+Visuals
 		|objMirrorTempleBG
+		|objMirrorTempleBG2
 		|objMirrorController
+	+Other
+		|objMirrorAvd
+		|objMirrorAvd2
+		|objCycleThingy
+		|objPLEASEBEAPINEAPPLE

@@ -9,6 +9,7 @@ can_save = true;
 max_difficulty = 1;
 grav = 1;
 init = false;
+mirror=noone;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -40,6 +41,16 @@ if input_check_pressed(key_shoot) {
         event_user(0);
     }
 }
+if(mirror != noone) {
+    with(mirror) image_index = other.image_index
+}
+#define Other_4
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+//field mirror: instance
 #define Other_7
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -54,7 +65,6 @@ action_id=603
 applies_to=self
 */
 /// Try to save
-
 if can_save && instance_exists(Player) && global.grav == grav {
     with(Player) {
         if place_meeting(x, y, PlayerKiller) {

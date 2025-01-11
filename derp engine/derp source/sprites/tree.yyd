@@ -79,6 +79,7 @@
 		|sprCherryWhite
 		|sprCherryGray
 		|sprCherryBlack
+		|sprNotACherry
 +Saves
 	|sprSaveMask
 	|sprSaveMedium
@@ -159,5 +160,11 @@
 		+Cherry
 			|sprMirrorCherry1
 			|sprMirrorCherry2
+		+Other
+			|sprCYCLENEEDLEWOO
 	+Visuals
 		|sprMirrorTempleBG
+		|sprMirrorVineLeft
+		|sprMirrorVineRight
+		|sprMirrorWarp
+		|sprMirrorRefresher

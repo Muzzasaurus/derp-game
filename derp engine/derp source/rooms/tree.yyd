@@ -12,6 +12,8 @@
 		|rmRoseGear1
 		+25-27 (mirror temple)
 			|rmFloor25
+			|rmFloor26
+			|rmFloor27
 	+SAMPLE ROOMS BAD
 		|rSample
 		|rSampleTriggers
